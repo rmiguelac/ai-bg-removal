@@ -1,5 +1,6 @@
 # ai-bg-removal
-remove background using model from huggingface
+
+remove background using model from huggingface (https://huggingface.co/briaai/RMBG-1.4)
 
 ## Building
 
