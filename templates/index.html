@@ -1,0 +1,22 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <button id="run-button">Run</button>
+    <p id="result"></p>
+
+    <script>
+        $(document).ready(function(){
+            $("#run-button").click(function(){
+                $.post("/run_code", function(data){
+                    $("#result").text(data.result);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
